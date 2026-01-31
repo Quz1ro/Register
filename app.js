@@ -1,5 +1,5 @@
 // ====== НАЛАШТУВАННЯ (ЗАМІНИ ПІД СЕБЕ) ======
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbXXXXXXXXXXXX/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbweA-1U2eAOH0SPGMff8UMP_EncLmKVl8FgsxtG4cth_FhI-AmX0JdDf7EOR3MY3UMQ/exec";
 const SECRET = "mySuperSecret123"; // має співпадати з SECRET в Apps Script
 
 
@@ -90,4 +90,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
 
