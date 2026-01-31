@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Заявка</title>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #0062E6, #33AEFF);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .btn-login {
+      font-size: 0.9rem;
+      letter-spacing: 0.05rem;
+      padding: 0.75rem 1rem;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-md-8 col-lg-5 mx-auto">
+        <div class="card border-0 shadow rounded-3 my-5">
+          <div class="card-body p-4 p-sm-5">
+            <h5 class="card-title text-center mb-4 fw-light fs-4">Залишити заявку</h5>
+
+            <form id="leadForm">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <label for="email">Email</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="telegram" placeholder="@username" required>
+                <label for="telegram">Telegram (@username)</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="phone" placeholder="+380..." required>
+                <label for="phone">Телефон</label>
+              </div>
+
+              <div class="d-grid">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">
+                  Відправити
+                </button>
+              </div>
+
+              <p id="status" class="text-center mt-3 mb-0"></p>
+            </form>
+
+            <p class="text-muted small mt-3 mb-0">
+              Натискаючи “Відправити”, ви погоджуєтесь на обробку введених контактних даних.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Підключення твого JS -->
+  <script src="./app.js"></script>
+</body>
+</html>
